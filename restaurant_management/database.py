@@ -8,7 +8,7 @@ def create_tables():
     conn = connect_db()
     cur = conn.cursor()
     
-    # Create menu table
+    
     cur.execute('''
         CREATE TABLE IF NOT EXISTS menu (
             id INTEGER PRIMARY KEY,
@@ -17,7 +17,7 @@ def create_tables():
         )
     ''')
     
-    # Create orders table
+ 
     cur.execute('''
         CREATE TABLE IF NOT EXISTS orders (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
